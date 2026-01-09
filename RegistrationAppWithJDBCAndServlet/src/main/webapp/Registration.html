@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration App</title>
+</head>
+<body style="
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family:Segoe UI, Tahoma, sans-serif;
+">
+
+<div style="
+    background:#fff;
+    width:360px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 15px 25px rgba(0,0,0,0.25);
+">
+
+    <h2 style="
+        text-align:center;
+        margin-bottom:25px;
+        color:#333;
+    ">User Registration</h2>
+
+    <form action="./RegisterServlet" method="post">
+
+        <label style="font-weight:600;color:#555;">Name</label>
+        <input type="text" name="name" required style="
+            width:100%;
+            padding:10px;
+            margin:8px 0 18px;
+            border:1px solid #ccc;
+            border-radius:8px;
+        ">
+
+        <label style="font-weight:600;color:#555;">Email</label>
+        <input type="email" name="email" required style="
+            width:100%;
+            padding:10px;
+            margin:8px 0 18px;
+            border:1px solid #ccc;
+            border-radius:8px;
+        ">
+
+        <label style="font-weight:600;color:#555;">Password</label>
+        <input type="password" name="password" required style="
+            width:100%;
+            padding:10px;
+            margin:8px 0 18px;
+            border:1px solid #ccc;
+            border-radius:8px;
+        ">
+
+        <label style="font-weight:600;color:#555;">City</label>
+        <input type="text" name="city" required style="
+            width:100%;
+            padding:10px;
+            margin:8px 0 22px;
+            border:1px solid #ccc;
+            border-radius:8px;
+        ">
+
+        <input type="submit" value="Register" style="
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:8px;
+            background:#2575fc;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+        ">
+        
+    </form>
+    
+     <!-- Login Button -->
+    <a href="login.html" style="
+        display:block;
+        text-align:center;
+        padding:12px;
+        border-radius:8px;
+        color:black;
+        text-decoration:none;
+        font-size:15px;
+    ">
+        Already have an account? Login
+    </a>
+    
+    <a href="index.html" style="
+        display:block;
+        text-align:center;
+        padding:12px;
+        border-radius:8px;
+        color:black;
+        text-decoration:none;
+        font-size:15px;
+    ">
+        Go Back
+    </a>
+</div>
+
+</body>
+</html>
