@@ -21,6 +21,7 @@ public class LoginServlet extends HttpServlet {
 		String name = request.getParameter("name");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
+		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		LoginDao dao = new LoginDao();
 		if(dao.validate(name, password, email)) {
@@ -34,3 +35,4 @@ public class LoginServlet extends HttpServlet {
 		}
 	}
 }
+
